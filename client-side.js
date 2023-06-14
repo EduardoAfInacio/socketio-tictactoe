@@ -37,7 +37,7 @@ socket.on("find", (e) => {
         document.getElementById("enterName").style.display = "none"
         document.getElementById("bigcont").style.display = "block"
         document.getElementById("whosTurn").style.display = "block"
-        document.getElementById("whosTurn").innerText = "X's Turn"
+        document.getElementById("whosTurn").innerText = "Vez de X"
 
     }
 
@@ -69,10 +69,10 @@ socket.on("playing", (e) => {
     p2id = foundObject.p2.p2move
 
     if ((foundObject.sum) % 2 == 0) {
-        document.getElementById("whosTurn").innerText = "O's Turn"
+        document.getElementById("whosTurn").innerText = "Vez de O"
     }
     else {
-        document.getElementById("whosTurn").innerText = "X's Turn"
+        document.getElementById("whosTurn").innerText = "Vez de X"
     }
 
     if (p1id != '') {
